@@ -11,4 +11,4 @@ http.createServer(function (req, res) {
   res.write('  II     BB   BB  MM   MM  \n'); 
   res.write('IIIIII  BBBBBBB  MMM   MMM \n'); 
   res.end(); //end the response
-}).listen(process.env.PORT); //the server object listens on port 8080 
+}).listen(8080); //the server object listens on port 8080 
