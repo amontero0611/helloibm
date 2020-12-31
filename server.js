@@ -1,9 +1,10 @@
 var http = require('http');
 
-var title = process.env.apptitle ||  ' ';
+var title = process.env.apptitle || ' ';
 var cr = process.env.copyright || ' ';
 var hi = process.env.salutation || ' ';
 //create a server object:
+console.log("Server listening on port 8080")
 http.createServer(function (req, res) {
   res.write('IIIIII  BBBBBBB  MM     MM \n'); //write a response to the client
   res.write('  II     BB   BB  MM   MM  \n'); 
