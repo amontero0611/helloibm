@@ -1,4 +1,6 @@
 var http = require('http');
+var os = require("os");
+var hostname = os.hostname();
 
 var title = process.env.APPTITLE || ' ';
 var cr = process.env.COPYRIGHT || ' ';
@@ -13,6 +15,7 @@ http.createServer(function (req, res) {
   res.write('  II     BB   BB  MM M MM  \n'); 
   res.write('  II     BB   BB  MM   MM  \n'); 
   res.write('IIIIII  BBBBBBB  MMM   MMM \n'); 
+  res.write('\nanswering from pod ' + hostname + '\n\n');
   res.write(title + '\n');
   res.write(cr + '\n');
   res.write(hi + '\n');

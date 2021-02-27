@@ -6,5 +6,9 @@
     "repository": {},
     "engines": {
         "node": "8.x"
+    },
+    "dependencies": {
+        "http": "0.x",
+        "os": "0.x"
     }
 }
