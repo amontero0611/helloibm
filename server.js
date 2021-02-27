@@ -1,8 +1,8 @@
 var http = require('http');
 
-var title = process.env.apptitle || ' ';
-var cr = process.env.copyright || ' ';
-var hi = process.env.salutation || ' ';
+var title = process.env.APPTITLE || ' ';
+var cr = process.env.COPYRIGHT || ' ';
+var hi = process.env.SALUTATION || ' ';
 //create a server object:
 console.log("Server listening on port 8080");
 http.createServer(function (req, res) {
